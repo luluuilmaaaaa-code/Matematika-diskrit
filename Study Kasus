@@ -1,0 +1,129 @@
+1.# Studi Kasus AND: Kelulusan Magang
+
+hadir_magang = True
+laporan_dikumpulkan = True
+nilai_mentor_baik = False
+
+# Model logika
+lulus = hadir_magang and laporan_dikumpulkan and nilai_mentor_baik
+
+# Output hasil magang
+if lulus:
+    print("Peserta LULUS magang")
+else:
+    print("Peserta TIDAK LULUS magang")
+# Keluaran: Peserta TIDAK LULUS magang
+
+2.
+
+# Studi Kasus AND: Turnamen Futsal
+
+tim_terdaftar = True
+iuran_lunas = True
+punya_seragam = True
+
+# Model logika
+boleh_main = tim_terdaftar and iuran_lunas and punya_seragam
+
+# Output hasil pendaftaran
+if boleh_main:
+    print("Tim BOLEH bertanding")
+else:
+    print("Tim TIDAK BOLEH bertanding")
+# Keluaran: Tim BOLEH bertanding
+
+3.# Studi Kasus AND: Penerimaan Anggota Organisasi
+
+mengisi_formulir = True
+lolos_wawancara = False
+hadir_pelantikan = True
+
+# Model logika
+diterima = mengisi_formulir and lolos_wawancara and hadir_pelantikan
+
+# Output hasil seleksi
+if diterima:
+    print("Pendaftar DITERIMA sebagai anggota")
+else:
+    print("Pendaftar TIDAK DITERIMA sebagai anggota")
+# Keluaran: Pendaftar TIDAK DITERIMA sebagai anggota
+
+4.# Studi Kasus OR: Sertifikat Kegiatan
+
+ikut_seminar = False
+ikut_workshop = True
+ikut_lomba = False
+
+# Model logika
+dapat_sertifikat = ikut_seminar or ikut_workshop or ikut_lomba
+
+# Output hasil kegiatan
+if dapat_sertifikat:
+    print("Peserta mendapat SERTIFIKAT")
+else:
+    print("Peserta tidak mendapat sertifikat")
+# Keluaran: Peserta mendapat SERTIFIKAT
+
+5.# Studi Kasus OR: Status Siaga Cuaca
+
+hujan_deras = False
+angin_kencang = False
+banjir = False
+
+# Model logika
+siaga = hujan_deras or angin_kencang or banjir
+
+# Output hasil peringatan
+if siaga:
+    print("Status SIAGA diaktifkan")
+else:
+    print("Status normal")
+# Keluaran: Status normal
+
+6.# Studi Kasus XOR + AND: Pendaftaran Seminar
+
+peserta_umum = True
+peserta_mahasiswa = True
+sudah_bayar = True
+
+# Model logika
+terdaftar = (peserta_umum ^ peserta_mahasiswa) and sudah_bayar
+
+# Output hasil pendaftaran
+if terdaftar:
+    print("Pendaftaran BERHASIL")
+else:
+    print("Pendaftaran GAGAL")
+# Keluaran: Pendaftaran GAGAL
+
+7.# Studi Kasus OR: Gratis Ongkos Kirim
+
+member_gold = False
+belanja_besar = True
+pakai_voucher = True
+
+# Model logika
+gratis_ongkir = member_gold or belanja_besar or pakai_voucher
+
+# Output hasil pesanan
+if gratis_ongkir:
+    print("Pesanan mendapat GRATIS ongkir")
+else:
+    print("Pesanan dikenai ongkir")
+# Keluaran: Pesanan mendapat GRATIS ongkir
+
+8.# Studi Kasus XOR + AND: Pendaftaran Seminar
+
+peserta_umum = True
+peserta_mahasiswa = True
+sudah_bayar = True
+
+# Model logika
+terdaftar = (peserta_umum ^ peserta_mahasiswa) and sudah_bayar
+
+# Output hasil pendaftaran
+if terdaftar:
+    print("Pendaftaran BERHASIL")
+else:
+    print("Pendaftaran GAGAL")
+# Keluaran: Pendaftaran GAGAL
