@@ -1,0 +1,121 @@
+## 1. Studi Kasus 1 — Seleksi Beasiswa (AND)
+
+Rumus logika: `lulus = aktif and nilai_tinggi and berkas_lengkap`
+
+| Aktif | Nilai Tinggi | Berkas Lengkap | Hasil AND | Output      |
+| ----- | ------------ | -------------- | --------- | ----------- |
+| True  | True         | True           | True      | LULUS       |
+| True  | True         | False          | False     | TIDAK LULUS |
+| True  | False        | True           | False     | TIDAK LULUS |
+| True  | False        | False          | False     | TIDAK LULUS |
+| False | True         | True           | False     | TIDAK LULUS |
+| False | True         | False          | False     | TIDAK LULUS |
+| False | False        | True           | False     | TIDAK LULUS |
+| False | False        | False          | False     | TIDAK LULUS |
+
+Kesimpulan: Mahasiswa dinyatakan lulus beasiswa jika semua persyaratan bernilai `True`.
+
+## 2. Studi Kasus 2 — Mengikuti Lomba (AND)
+
+Rumus logika: `lulus = terdaftar and mengikuti_pelatihan and mengumpulkan_tugas`
+
+| Terdaftar | Mengikuti Pelatihan | Mengumpulkan Tugas | Hasil AND | Output           |
+| --------- | ------------------- | ------------------ | --------- | ---------------- |
+| True      | True                | True               | True      | BOLEH ikut lomba |
+| True      | True                | False              | False     | TIDAK BOLEH      |
+| True      | False               | True               | False     | TIDAK BOLEH      |
+| True      | False               | False              | False     | TIDAK BOLEH      |
+| False     | True                | True               | False     | TIDAK BOLEH      |
+| False     | True                | False              | False     | TIDAK BOLEH      |
+| False     | False               | True               | False     | TIDAK BOLEH      |
+| False     | False               | False              | False     | TIDAK BOLEH      |
+
+Kesimpulan: Peserta boleh mengikuti lomba jika sudah terdaftar, mengikuti pelatihan, dan mengumpulkan tugas.
+
+## 3. Studi Kasus 3 — Kelulusan Ujian (AND)
+
+Rumus logika: `lulus = hadir and nilai_ujian and mengikuti_praktik`
+
+| Hadir | Nilai Ujian | Mengikuti Praktik | Hasil AND | Output      |
+| ----- | ----------- | ----------------- | --------- | ----------- |
+| True  | True        | True              | True      | LULUS ujian |
+| True  | True        | False             | False     | TIDAK LULUS |
+| True  | False       | True              | False     | TIDAK LULUS |
+| True  | False       | False             | False     | TIDAK LULUS |
+| False | True        | True              | False     | TIDAK LULUS |
+| False | True        | False             | False     | TIDAK LULUS |
+| False | False       | True              | False     | TIDAK LULUS |
+| False | False       | False             | False     | TIDAK LULUS |
+
+Kesimpulan: Siswa dinyatakan lulus jika ketiga persyaratan terpenuhi.
+
+## 4. Studi Kasus 4 — Karyawan Mendapat Bonus (OR)
+
+Rumus logika: `bonus = rajin or berprestasi or punya_pengalaman`
+
+| Rajin | Berprestasi | Punya Pengalaman | Hasil OR | Output               |
+| ----- | ----------- | ---------------- | -------- | -------------------- |
+| True  | True        | True             | True     | Mendapat BONUS       |
+| True  | True        | False            | True     | Mendapat BONUS       |
+| True  | False       | True             | True     | Mendapat BONUS       |
+| True  | False       | False            | True     | Mendapat BONUS       |
+| False | True        | True             | True     | Mendapat BONUS       |
+| False | True        | False            | True     | Mendapat BONUS       |
+| False | False       | True             | True     | Mendapat BONUS       |
+| False | False       | False            | False    | Tidak mendapat bonus |
+
+## 5. Studi Kasus — Seleksi Beasiswa (AND)
+
+Rumus: `lulus = aktif and nilai_tinggi and berkas_lengkap`
+
+| Aktif | Nilai Tinggi | Berkas Lengkap | Hasil | Output         |
+| ----- | ------------ | -------------- | ----- | -------------- |
+| True  | True         | True           | True  | LULUS beasiswa |
+| True  | True         | False          | False | TIDAK LULUS    |
+| True  | False        | True           | False | TIDAK LULUS    |
+| True  | False        | False          | False | TIDAK LULUS    |
+| False | True         | True           | False | TIDAK LULUS    |
+| False | True         | False          | False | TIDAK LULUS    |
+| False | False        | True           | False | TIDAK LULUS    |
+| False | False        | False          | False | TIDAK LULUS    |
+
+## 6.Studi Kasus — Mengikuti Lomba (AND)
+
+Rumus: `lulus = terdaftar and mengikuti_pelatihan and mengumpulkan_tugas`
+
+| Terdaftar | Mengikuti Pelatihan | Mengumpulkan Tugas | Hasil | Output           |
+| --------- | ------------------- | ------------------ | ----- | ---------------- |
+| True      | True                | True               | True  | BOLEH ikut lomba |
+| True      | True                | False              | False | TIDAK BOLEH      |
+| True      | False               | True               | False | TIDAK BOLEH      |
+| True      | False               | False              | False | TIDAK BOLEH      |
+| False     | True                | True               | False | TIDAK BOLEH      |
+| False     | True                | False              | False | TIDAK BOLEH      |
+| False     | False               | True               | False | TIDAK BOLEH      |
+| False     | False               | False              | False | TIDAK BOLEH      |
+
+## 7.Studi Kasus — Karyawan Mendapat Bonus (OR)
+
+Rumus: `bonus = rajin or berprestasi or punya_pengalaman`
+
+| Rajin | Berprestasi | Punya Pengalaman | Hasil | Output               |
+| ----- | ----------- | ---------------- | ----- | -------------------- |
+| True  | True        | True             | True  | Mendapat BONUS       |
+| True  | True        | False            | True  | Mendapat BONUS       |
+| True  | False       | True             | True  | Mendapat BONUS       |
+| True  | False       | False            | True  | Mendapat BONUS       |
+| False | True        | True             | True  | Mendapat BONUS       |
+| False | True        | False            | True  | Mendapat BONUS       |
+| False | False       | True             | True  | Mendapat BONUS       |
+| False | False       | False            | False | Tidak mendapat bonus |
+
+## 8. Studi Kasus — Pembeli Mendapat Diskon (OR)
+
+Rumus: `diskon = member or belanja_banyak`
+
+| Member | Belanja Banyak | Hasil OR | Output                |
+| ------ | -------------- | -------- | --------------------- |
+| True   | True           | True     | Mendapat DISKON       |
+| True   | False          | True     | Mendapat DISKON       |
+| False  | True           | True     | Mendapat DISKON       |
+| False  | False          | False    | Tidak mendapat diskon |
